@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.header {
+    padding: 15px 0;
+    background-color: #ffff;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid #1c86ff;
+}
+
+.logo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px solid #1c86ff;
+    width: 80%;
+}
+
+.logo-content-img {
+    border: solid 0px #42515f;
+}
+
+.emp-text {
+    font: normal bold 20px/25px Montserrat;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    color: #1c86ff;
+    text-transform: capitalize;
+}
+
+.emp-payroll {
+    color: #42515f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.form-content {
+    min-height: calc(100%-80px);
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+    padding: 20px;
+}
+
+.form {
+    width: 100%;
+    padding: 0px 0px;
+    background: #ffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #f5f5f5;
+    border-radius: 8px;
+    opacity: 1;
+    justify-content: space-evenly;
+}
+
+.form-head {
+    font: normal normal bold 24px/70px Roboto;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-weight: 400;
+    text-transform: capitalize;
+    opacity: 1;
+    text-align: center;
+    border-radius: 8px 8px 0px 0px;
+    width: 88%;
+    background-color: #1c86ff;
+    height: 72px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 60%;
+}
+
+.form-rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 90px;
+    width: 100%;
+    padding-right: 90px;
+    padding-top: 45px;
+    padding-bottom: 40px;
+}
+
+.row-content {
+    width: 100%;
+    padding-bottom: 3px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.input {
+    position: relative;
+}
+
+.input {
+    
+    font: normal normal bold 20px/70px Roboto;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.input__field {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: 1px solid #BDBDBD;
+    color: currentColor;
+    background: transparent;
+    border-radius: 4px;
+    height: 37px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.add-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 18px;
+}
+
+.dropDown {
+    width: 100%;
+    padding: 5px;
+    height: 37px;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+    font: normal normal bold 20px/70px Roboto;
+    font-weight: 400;
+    font-size: 13px;
+    margin: 5px 0px;
+}
+
+.zip-content {
+    width: 100%;
+    margin: 5px 5px;
+}
+
+.address-field {
+    height: 100px;
+    padding: 10px;
+}
+
+.button {
+    font-size: 16px;
+    font-family: Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    opacity: 1;
+    background: transparent;
+    border: none;
+    font-weight: 400;
+    min-width: 130px;
+    padding: 7px 7px;
+    cursor: pointer;
+    border: none;
+    background-color: #ebe5e5;
+    border-radius: 5px;
+    margin-left: 25px;
+}
+
+.buttonParent {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.header-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c86ff;
+    border-radius: 8px 8px 0px 0px;
+
+}
+
+
+error-output {
+    font-size: 14px;
+    font-style: italic;
+    margin-left: 10px;
+    color: red;
+}
+
+@media only screen and (max-width: 900px) {
+   .form-container {
+       width: 90%;
+   }
+
+   .form-rows {
+       padding-left: 44px;
+       padding-right: 44px;
+   }
+}
+
+@media only screen and (max-width: 520px) {
+    .add-content {
+        flex-direction: column;
+    }
+
+    .form-rows {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .form-head {
+        font-size: 22px;
+    }
+ }
+
+ @media only screen and (max-width: 380px) {
+ 
+    .form-head {
+        font-size: 17px;
+    }
+
+    .buttonParent {
+        flex-wrap: wrap;
+        margin-top: 0px;
+    }
+
+    .button {
+        margin-top: 10px;
+    }
+
+    .add-content {
+        padding-bottom: 5px;
+    }
+
+    .form-rows {
+        padding-bottom: 26px;
+    }
+ }
